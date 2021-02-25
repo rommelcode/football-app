@@ -2,13 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 interface IPlayer {
-    player: string;
+    player:{name:string} ;
 }
-const List: React.FC<IPlayer> = ({ player} : IPlayer) => {
+// interface IPlayers {
+//     players:IPlayer[] ;
+// }
+const List: React.FC<IPlayer> = ({player} : IPlayer) => {
     return (
         <div >
-            name: {player}
+            name: {player.name}
         </div>
     );
 }

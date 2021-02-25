@@ -4,12 +4,12 @@ import './App.css';
 import List from './List';
 
 function App() {
+  const player = {name:"Messi"};
 
-  const player = "Messi";
   return (
     <div className="App">
       Football app
-      <List player={player}/>
+      <List player = {player}/>
     </div>
   );
 }
