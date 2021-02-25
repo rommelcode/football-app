@@ -4,15 +4,16 @@ import './App.css';
 
 
 interface IPlayer {
-    player:{name:string} ;
+    name:string ;
 }
-// interface IPlayers {
-//     players:IPlayer[] ;
-// }
-const List: React.FC<IPlayer> = ({player} : IPlayer) => {
+interface IPlayers {
+    players:IPlayer[] ;
+}
+
+const List: React.FC<IPlayers> = ({players} : IPlayers) => {
     return (
         <div >
-            name: {player.name}
+            {players.map( (p)  => <div>{p.name}</div>)}
         </div>
     );
 }

@@ -5,11 +5,11 @@ import List from './List';
 
 function App() {
   const player = {name:"Messi"};
-
+const players = [{name:"neymar"},{name:"beffen"}];
   return (
     <div className="App">
       Football app
-      <List player = {player}/>
+      <List players = {players}/>
     </div>
   );
 }
