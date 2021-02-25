@@ -4,10 +4,12 @@ import './App.css';
 import List from './List';
 
 function App() {
+
+  const player = "Messi";
   return (
     <div className="App">
       Football app
-      <List/>
+      <List player={player}/>
     </div>
   );
 }
