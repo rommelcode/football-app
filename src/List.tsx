@@ -1,15 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import List from './List';
 
-function App() {
+function List() {
   return (
     <div className="App">
-      Football app
-      <List/>
+      Lists
     </div>
   );
 }
 
-export default App;
+export default List;
