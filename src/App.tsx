@@ -12,8 +12,13 @@ function App() {
   return (
     <Router>
       Football app
-      <List players={players}></List>
-     
+      <nav>
+        <ul>
+          <li><a href="/players">Players</a></li>
+           </ul>
+      </nav>
+      <Route path="/" render={() => <h1>Welcome!</h1>} />
+      <Route path="/players" {...players} render={props => <List {...props}></List>} />
     </Router>
   );
 }
