@@ -5,6 +5,7 @@ import './App.css';
 
 interface IPlayer {
     name:string ;
+    id?: number;
 }
 
 
