@@ -10,12 +10,22 @@ interface IPlayers {
     players:IPlayer[] ;
 }
 
-const List: React.FC<IPlayers> = ({players} : IPlayers) => {
+
+const Player: React.FC<IPlayer> = ({name} : IPlayer) => {
     return (
         <div >
-            {players.map( (p)  => <div>{p.name}</div>)}
+            {name}
         </div>
     );
 }
 
-export default List;
+
+// const List: React.FC<IPlayers> = ({players} : IPlayers) => {
+//     return (
+//         <div >
+//             {players.map( (p)  => <div>{p.name}</div>)}
+//         </div>
+//     );
+// }
+
+// export default List;
