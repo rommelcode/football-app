@@ -21,12 +21,13 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="{`player/${id}`"/>
+            <Link to={`player/${id}`} >{id}</Link>
             </li>
         </ul>
       </nav>
-      <Route path="/player" component={()=> <Player name={player}/>} />
-      {/* <Route path="/" component={() => <List players={players} />} /> */}
+      <Route path="/player/:id"  component={()=> <Player name={player}/>} />
+      <Route path="/player"  />
+      <Route path="/" render={() => <h1>Hello</h1>} />
     </Router>
   );
 }
